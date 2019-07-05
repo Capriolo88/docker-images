@@ -76,8 +76,9 @@ ENV PATH /root/.phpenv/shims:/root/.phpenv/bin:$PATH
 #------------------------------------------------
 # php install
 #------------------------------------------------
-RUN for ver in 7.0.33 7.1.30; do phpenv install $ver; done
-RUN phpenv global 7.0.33
+# RUN for ver in 7.0.33 7.1.30; do phpenv install $ver; done
+RUN phpenv install 7.0.33
+RUN phpenv rehash && phpenv global 7.0.33
 
 #------------------------------------------------
 # phpdict
