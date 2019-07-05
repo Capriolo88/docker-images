@@ -42,6 +42,10 @@ RUN apt-get install -y libxml2-dev libssl-dev \
     libcurl4-gnutls-dev libjpeg-dev libpng12-dev libmcrypt-dev \
     libreadline-dev libtidy-dev libxslt1-dev autoconf \
     re2c libmysqlclient-dev libsqlite3-dev libbz2-dev \
+    libcurl3-dev libpng-dev libfreetype6-dev libgmp3-dev \
+    libc-client-dev libmhash-dev libz-dev libreadline6-dev \
+    librecode-dev libtidy-dev libpcre3-dev libaspell-dev libsnmp-dev \
+    libxslt-dev libldap2-dev ncurses-dev \
     php5.6-cli sqlite3 mysql-server-5.6
 
 #------------------------------------------------
