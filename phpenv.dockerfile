@@ -42,7 +42,7 @@ RUN apt-get install -y libxml2-dev libssl-dev \
     libcurl4-gnutls-dev libjpeg-dev libpng12-dev libmcrypt-dev \
     libreadline-dev libtidy-dev libxslt1-dev autoconf \
     re2c libmysqlclient-dev libsqlite3-dev libbz2-dev \
-    php5-cli sqlite3 mysql-server-5.6
+    php5.6-cli sqlite3 mysql-server-5.6
 
 #------------------------------------------------
 # composer
