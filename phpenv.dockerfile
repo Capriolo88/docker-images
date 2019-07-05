@@ -76,15 +76,14 @@ ENV PATH /root/.phpenv/shims:/root/.phpenv/bin:$PATH
 #------------------------------------------------
 # php install
 #------------------------------------------------
-ADD ./installver /root/installver
-RUN for ver in `cat ./installver`; do phpenv install $ver; done
-RUN phpenv global `head -n 1 installver`
+RUN for ver in 7.0.33 7.1.30; do phpenv install $ver; done
+RUN phpenv global 7.0.33
 
 #------------------------------------------------
 # phpdict
 #------------------------------------------------
-RUN mkdir -p ~/.vim/dict && \
-    php -r '$f=get_defined_functions();echo join("\n", $f["internal"]);'|sort > ~/.vim/dict/php.dict
+# RUN mkdir -p ~/.vim/dict && \
+#     php -r '$f=get_defined_functions();echo join("\n", $f["internal"]);'|sort > ~/.vim/dict/php.dict
 
 #------------------------------------------------
 # phpcs, phpmd
