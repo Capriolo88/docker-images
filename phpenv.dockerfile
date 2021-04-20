@@ -102,3 +102,5 @@ RUN composer global require 'squizlabs/php_codesniffer=*' && \
 # Cache clean
 #------------------------------------------------
 RUN sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# OMG
